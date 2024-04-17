@@ -1,0 +1,27 @@
+
+body{
+    background-image: url(../img/teste.avif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center ;
+}
+
+
+
+h1{
+    color: green;
+    background-color: #0000ff50;
+}
+
+p{
+    color: #0000ff;
+
+
+}
+#primeiro{
+    color: #0000ff
+}
+
+.noticia{
+    color: #ED6464;
+}

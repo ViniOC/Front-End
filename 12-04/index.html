@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <style>
+
+        .centralizar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+ 
+        }
+        fieldset{
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px #ccc;
+            width: 400px;
+        }
+        legend{
+            font-size: 1.2em;
+            font-weight: bold;
+            background-color: rgb(193, 204, 204);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Formularios</h1>
+    <div class="centralizar">
+        <form action="cadastrar" method="get">
+
+
+            <fieldset class="fundoFormulario">
+
+                <legend>Dados Pessoais</legend>
+
+                <label for="ifnome">Nome:</label>
+                <input type="text" name = "nome" required id = "idnome" placeholder="Digite seu Nome" autofocus autocomplete=""><br>
+
+                <label for="idSenha">Senha:</label>
+                <input type="password" name="senha" maxlength="8" ><br>
+
+                <label for="idemail">E-mail:</label>
+                <input type="email" name ="email"><br>
+
+                <label for="idsite">Site:</label>
+                <input type="url" name="site" id="idsite"><br>
+
+                <label for="idBusca">Busca:</label>
+                <input type="search" name="busca" id="idbusca"><br>
+
+                <label for="idData">Data:</label>
+                <input type="date" name="data" id="idData"><br>
+
+                <label for="idHora">Hora:</label>
+                <input type="time" name="hora" id="idHora"><br>
+
+                <label for="idQuant">Quantidade:</label>
+                <input type="number" name="Quant" min = "0" max = "50" step = "2" id="idQuant"><br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Tamanho</legend>
+
+                <input type="radio" name="tamanho" id="idpeq" value="P">
+                <label for="idpeq">Pequeno</label>
+
+                <input type="radio" name="tamanho" id="idmed" value="M">
+                <label for="idmed">Medio</label>
+
+                <input type="radio" name="tamanho" id="idGrand" value="G">
+                <label for="idGrand">Grande</label>
+
+            </fieldset>
+            <fieldset>
+                <legend>Cores</legend>
+                
+                    <input type="checkbox" name="cor" id="idAzul" value="Azul">
+                    <label for="idAzul">Azul</label><br>
+
+                    <input type="checkbox" name="cor" id="idVermelho" value="Vermelho">
+                    <label for="idVermelho">Vermelho</label><br>
+
+                    <input type="checkbox" name="cor" id="idVerde" value="Verde">
+                    <label for="idVerde">Verde</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Locais para Compras</legend>
+                <label for="idestado">Estados:</label>
+                <select name="estado" id="idestado">
+                    <option value="" selected disabled >Selecione um estado</option>
+                <optgroup label="Sudeste">
+    
+                        <option value="SP" >São Paulo</option>
+                        <option value="RJ" >Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                </optgroup> 
+                <optgroup label="Sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Observaçôes</legend>
+                <textarea name="Observaçôes" id="idobs" cols="30" rows="10" maxlength="20"></textarea>
+
+            </fieldset>
+
+            <input type="submit" value="Cadastrar">
+
+        </form>
+    </div>
+</body>
+</html>

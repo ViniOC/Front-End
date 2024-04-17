@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+h1{
+    text-align: center;
+    color: #ed145b;
+    font-size: 40px;
+    font-family: "Helvetica Neue",;
+}
+.sites{
+    background-color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 30px;
+    border-radius: 5% ;
+}
+a{
+    text-decoration: none;
+    color: red;
+}
+.pginicial{
+    margin-block: center;
+    padding: 10px;
+    background-color: aliceblue;
+    border: 3px solid #8c8c8c;
+    border-radius: 20px;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;    
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+
+}
